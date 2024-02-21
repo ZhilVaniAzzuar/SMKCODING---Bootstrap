@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMKCODING - Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <style>
+      .responsive-logo {
+        width: 30%;
+      }
+      .nav-logo {
+        width: 35%;
+      }
+      .brown-circle {
+        background-color: rgb(85, 39, 7);
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+      .border-transparent {
+        border: 3px solid rgba(177, 177, 177, 0.363);
+      }
+      @media only screen and (max-width: 600px) {
+        .responsive-logo {
+          width: 30vw;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        .responsive-logo {
+          width: 20vw;
+        }
+        .nav-logo {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: cornsilk">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container">
+        <a
+          class="navbar-brand nav-logo d-md-block d-flex justify-content-center align-items-center"
+          href="#"
+        >
+          <img
+            class="responsive-logo"
+            src="/Images/logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          style="width: 60%"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Delivery</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <i
+              class="ai-search fs-4"
+              style="margin-right: -1.5em; z-index: 10"
+            ></i>
+            <input
+              class="form-control ps-5 me-2 rounded-pill shadow-lg border-0"
+              style="font-size: 0.8em"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="bg-transparent border-0">
+              <i class="ai-cart fs-4"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <img
+      src="/Images/bg-hero.png"
+      class="position-absolute"
+      style="top: 0; right: 0; z-index: -2"
+      width="500"
+    />
+    <img
+      src="/Images/bg-hero-2.png"
+      class="position-absolute"
+      style="bottom: -25%; left: 0; z-index: -2"
+      width="500"
+    />
+    <section
+      class="container d-flex justify-content-between g-5"
+      style="min-height: 500px; padding-bottom: 100px; margin-top: 100px"
+    >
+      <div
+        class="h-100 d-flex justify-content-center align-items-start flex-column"
+        style="width: 40%"
+      >
+        <h1 class="mb-4">
+          Enjoy your <span class="text-warning">coffee</span><br />before your
+          activity
+        </h1>
+        <p class="text-black-50 fw-medium">
+          Boost your productivity and build your<br />
+          mood with a glass of coffee in the morning
+        </p>
+        <div class="d-flex justify-content-start align-items-center g-5">
+          <button
+            class="btn px-4 py-1 text-white rounded-pill d-flex align-items-center"
+            style="background-color: rgb(85, 39, 7)"
+            type="button"
+          >
+            Order now
+            <span
+              style="height: 2em; width: 2em"
+              class="bg-warning p-1 ms-2 rounded-circle"
+              ><i class="ai-cart fs-6"></i
+            ></span>
+          </button>
+          <a href="#" class="text-warning fw-bold ms-4 text-decoration-none"
+            >More menu</a
+          >
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-center align-items-center position-relative"
+        style="width: 60%; height: 100%"
+      >
+        <img
+          src="/Images/coffe-glass.png"
+          width="250"
+          alt="coffee glass"
+        />
+        <div class="brown-circle"></div>
+        <img
+          class="position-absolute"
+          src="/Icons/transparent-coffe.svg"
+          width="300"
+        />
+        <div
+          class="py-2 fw-bolder px-5 text-black rounded-pill shadow-lg bg-white border-transparent position-absolute"
+          style="left: 20%; top: 12%"
+        >
+          Cappuccino
+        </div>
+        <div
+          class="py-2 fw-bolder px-4 text-black rounded-pill shadow-lg bg-white border-transparent position-absolute"
+          style="right: 26%; top: 24%; border-width: 5px"
+        >
+          4.8 <i class="ai-star text-warning"></i>
+        </div>
+        <div
+          class="py-2 fw-bolder px-5 text-black rounded-pill shadow-lg bg-white border-transparent position-absolute"
+          style="left: 25%; bottom: 0; border-width: 5px"
+        >
+          18K
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="margin-top: -4rem">
+      <h1 class="fs-1">
+        Popular
+        <span style="text-decoration: underline; text-decoration-color: orange"
+          >Now</span
+        >
+      </h1>
+      <div
+        class="d-flex justify-content-around align-items-center rounded-5"
+        style="
+          margin-top: 200px;
+          background-color: bisque;
+          width: 100%;
+          height: 250px;
+        "
+      >
+        <div
+          class="card p-3 position-relative"
+          style="
+            width: 18rem;
+            margin-top: -200px;
+            border: 4px solid rgba(177, 177, 177, 0.363);
+          "
+        >
+          <div
+            class="fw-bolder d-flex align-items-center px-2 text-black rounded-pill shadow-lg bg-white border-transparent position-absolute"
+            style="left: 10%; top: 8%; border-width: 2px"
+          >
+            4.8 <img src="/Icons/gold-star.svg" width="16" />
+          </div>
+          <img src="/Images/product-1.png" class="card-img" />
+          <div class="card-body">
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <p class="fs-5 fw-bold">Vanilla Latte</p>
+              <p class="fs-6 fw-bolder">21K</p>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <div class="d-flex flex-row fs-5">
+                <button class="btn btn-outline-warning py-0 me-2">Hot</button>
+                <button class="btn btn-outline-warning py-0 disabled">
+                  Cold
+                </button>
+              </div>
+              <button
+                style="height: 2em; width: 2em; border: none"
+                class="d-flex justify-content-center align-items-center bg-warning p-2 ms-2 rounded-circle text-white"
+              >
+                <i class="ai-cart fs-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card p-3 position-relative"
+          style="
+            width: 18rem;
+            margin-top: -200px;
+            border: 4px solid rgba(177, 177, 177, 0.363);
+          "
+        >
+          <div
+            class="fw-bolder d-flex align-items-center px-2 text-black rounded-pill shadow-lg bg-white border-transparent position-absolute"
+            style="left: 10%; top: 8%; border-width: 2px"
+          >
+            4.8 <img src="/Icons/gold-star.svg" width="16" />
+          </div>
+          <img src="/Images/product-2.png" class="card-img" />
+          <div class="card-body">
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <p class="fs-5 fw-bold">Espresso</p>
+              <p class="fs-6 fw-bolder">12K</p>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <div class="d-flex flex-row fs-5">
+                <button class="btn btn-outline-warning py-0 disabled me-2">
+                  Hot
+                </button>
+                <button class="btn btn-outline-warning py-0 disabled">
+                  Cold
+                </button>
+              </div>
+              <button
+                style="height: 2em; width: 2em; border: none"
+                class="d-flex justify-content-center align-items-center bg-warning p-2 ms-2 rounded-circle text-white"
+              >
+                <i class="ai-cart fs-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card p-3 position-relative"
+          style="
+            width: 18rem;
+            margin-top: -200px;
+            border: 4px solid rgba(177, 177, 177, 0.363);
+          "
+        >
+          <div
+            class="fw-bolder d-flex align-items-center px-2 text-black rounded-pill shadow-lg bg-white border-transparent position-absolute"
+            style="left: 10%; top: 8%; border-width: 2px"
+          >
+            4.8 <img src="/Icons/gold-star.svg" width="16" />
+          </div>
+          <img src="/Images/product-3.png" class="card-img" />
+          <div class="card-body">
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <p class="fs-5 fw-bold">Hazelnut Latte</p>
+              <p class="fs-6 fw-bolder">23K</p>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <div class="d-flex flex-row fs-5">
+                <button class="btn btn-outline-warning py-0 disabled me-2">
+                  Hot
+                </button>
+                <button class="btn btn-outline-warning py-0 disabled">
+                  Cold
+                </button>
+              </div>
+              <button
+                style="height: 2em; width: 2em; border: none"
+                class="d-flex justify-content-center align-items-center bg-warning p-2 ms-2 rounded-circle text-white"
+              >
+                <i class="ai-cart fs-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="bg-white w-100 position-absolute"
+      style="height: 800px; margin-top: -200px; z-index: -4"
+    ></div>
+
+    <section class="container pt-5">
+      <h1 class="fs-1 mb-5">
+        How to use delivery
+        <span style="text-decoration: underline; text-decoration-color: orange"
+          >service</span
+        >
+      </h1>
+      <div class="container d-flex flex-row justify-content-around">
+        <div
+          class="d-flex flex-column align-items-center justify-content-around bg-transparent border-0"
+          style="width: 18rem"
+        >
+          <img
+            src="/Images/service-1.png"
+            alt="..."
+            style="width: 10rem"
+          />
+          <div class="card-body">
+            <p class="text-center h6 fs-4 fw-bolder">choose your coffee</p>
+            <p class="text-cente fs-5 fw-medium">
+              there are 30+ coffee for you
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column align-items-center justify-content-around bg-transparent border-0"
+          style="width: 18rem"
+        >
+          <img
+            src="/Images/service-2.png"
+            alt="..."
+            style="width: 10rem"
+          />
+          <div class="card-body">
+            <p class="text-center h6 fs-4 fw-bolder">we delivery it to you</p>
+            <p class="text-cente fs-5 fw-medium">Choose delivery service</p>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column align-items-center justify-content-around bg-transparent border-0"
+          style="width: 18rem"
+        >
+          <img
+            src="/Images/service-3.png"
+            alt="..."
+            style="width: 10rem"
+          />
+          <div class="card-body">
+            <p class="text-center h6 fs-4 fw-bolder">Enjoy your coffee</p>
+            <p class="text-cente fs-5 fw-medium">Choose delivery service</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
